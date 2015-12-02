@@ -1,4 +1,5 @@
 require "email_trail/version"
+require "email_trail/railtie" if defined?(Rails::Railtie)
 
 module EmailTrail
   class Base
@@ -7,10 +8,7 @@ module EmailTrail
       to = message.to.to_s
       subject = message.subject.to_s
       message = message.body.to_s
+      puts "LOLOLOLOLOLOL"
     end
   end
 end
-
-defined?(ActionMailer::Base) ?
-  ActionMailer::Base.register_interceptor(EmailTrail::Base) :
-  fail('email_trail requires ActionMailer::Base')
