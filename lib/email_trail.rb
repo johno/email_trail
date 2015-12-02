@@ -5,6 +5,7 @@ module EmailTrail
   class Base
 
     def self.delivering_email(message)
+      puts message.inspect
       to = message.to.to_s
       subject = message.subject.to_s
       message = message.body.to_s
