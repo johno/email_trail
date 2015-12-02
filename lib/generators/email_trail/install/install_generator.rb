@@ -15,7 +15,7 @@ module EmailTrail
 
       def create_model_file
         template 'email_trail.rb', 'app/models/email_trail.rb'
-        migration_template 'create_email_trails', 'db/migrate/create_email_trails.rb'
+        migration_template 'create_email_trails.rb', 'db/migrate/create_email_trails.rb'
       end
     end
   end
