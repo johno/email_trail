@@ -1,6 +1,6 @@
-# EmailTrail
+# email_trail
 
-TODO: Write a gem description
+Automagically store an audit trail of all emails stored in your Rails app.
 
 ## Installation
 
@@ -10,17 +10,20 @@ Add this line to your application's Gemfile:
 gem 'email_trail'
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install email_trail
+```sh
+$ bundle
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+#### Installation
+
+```sh
+rails g email_trail:install
+rake db:migrate
+```
+
+That's it.
 
 ## Contributing
 
