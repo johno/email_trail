@@ -5,7 +5,7 @@ module EmailTrail
   class Base
 
     def self.delivering_email(message)
-      EmailTrailMessage.create(
+      EmailTrail.create(
         to: message.to.to_s,
         cc: message.cc.to_s,
         bcc: message.bcc.to_s,
