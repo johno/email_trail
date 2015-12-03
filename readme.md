@@ -1,4 +1,4 @@
-# email_trail
+# email_trail [![Build Status](https://travis-ci.org/johnotander/email_trail.svg?branch=master)](https://travis-ci.org/johnotander/email_trail)
 
 Automagically store an audit trail of all emails stored in your Rails app.
 
