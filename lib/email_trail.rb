@@ -9,7 +9,9 @@ module EmailTrail
         to: message.to.to_s,
         cc: message.cc.to_s,
         bcc: message.bcc.to_s,
-        subject: message.subject.to_s
+        from: message.from.to_s,
+        subject: message.subject.to_s,
+        body: message.body.to_s
       )
     end
   end

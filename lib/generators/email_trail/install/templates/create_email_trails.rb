@@ -4,15 +4,13 @@ class CreateEmailTrails < ActiveRecord::Migration
       t.text :to
       t.text :cc
       t.text :bcc
+      t.text :from
       t.text :subject
-      t.string :mailer_name
-      t.string :message_name
-      t.references :emailable, polymorphic: true
+      t.text :body
       t.timestamps
     end
 
-    add_index :email_trails, :emailable_type
-    add_index :email_trails, :emailable_id
+    add_index :email_trails, :to
   end
 
   def self.down
